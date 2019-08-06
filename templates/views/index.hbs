@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/1-bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="content">
+            {{>header}}
+            <form action="">
+                <input class="form-control w-50 center" id="weather" type="text" placeholder="Input your address here..."><br>
+                <button type="submit" class="btn btn-info">Search For Weather</button>
+            </form>
+            <p>Use This Site To Fined The Weather.. </p>
+
+            <p>Temperature: <span id="message-1"></span></p>
+            <p>Location: <span id="message-2"></span></p>
+
+            {{>footer}}
+        </div>
+    </div>
+
+    <script src="/js/2-jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/3-popper.min.js"></script>
+    <script src="/js/4-bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+
+</html>
